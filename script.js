@@ -1,15 +1,15 @@
 
 function bmi(value1, value2){
-     let result = (value1/(value2/100)^2);
+     let result = (value1/(value2/100)**2);
      
      if (result >= 30){
-        document.getElementById('result').innerHTML = `Your BMI ${result} its Obesity`
+        document.getElementById('result').innerHTML = `Your BMI ${result.toFixed(1)} its Obesity`
      }else if(result >= 25 && result <= 29.9){
-        document.getElementById('result').innerHTML = `Your BMI ${result} its Overweight`
+        document.getElementById('result').innerHTML = `Your BMI ${result.toFixed(1)} its Overweight`
      }else if(result >= 18.5 && result <= 24.5){
-        document.getElementById('result').innerHTML = `Your BMI ${result} its Normal Weight`
+        document.getElementById('result').innerHTML = `Your BMI ${result.toFixed(1)} its Normal Weight`
      }else{
-        document.getElementById('result').innerHTML = `Your BMI ${result} its Underweight`
+        document.getElementById('result').innerHTML = `Your BMI ${result.toFixed(1)} its Underweight`
      }
 }
 
